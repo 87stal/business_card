@@ -1,0 +1,18 @@
+.header{
+   min-height: 100px;
+   background-color:slategray;
+   color:honeydew;
+}
+
+.user-list_item{
+   display:none;
+   width: 20rem;
+   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.footer{
+   background-color:slategray;
+   position: absolute; 
+   bottom: 0;
+   color:honeydew;
+}
