@@ -6,6 +6,11 @@
     }).done((users) => {
         const perPage = users.per_page;
 
+        if (users.length === 0) {
+            $('.cardList').append(`${'<div><p>No card for showing</p></div>'}`);
+            return;
+        }
+
         $.each(users.data, (i, item) => {
             $('.cardList').append(
                 `${"<div class='col-4'>"
@@ -45,5 +50,7 @@
                 );
             }
         });
+    }).fail(() => {
+        console.log('Error');
     });
 }());
